@@ -21,7 +21,7 @@ window.addEventListener('load', function () {
 // function to show the right message ------> 
 
 function message (hour = new Date()) {
-    var hr = hour.getHours()
+    var hr = hour.getHours();
 
     if (hr >= 6 && hr <= 12) {
         return "Good Morning!"
@@ -69,6 +69,18 @@ const messages = [
     "I wanna show you off",
     "Nem o sol consegue me aquecer num dia ensolarado como você consegue aquecer meu coração só de sorrir para mim.",
     "I love you",
+    "Você é incrível",
+    "Você é Maravilhosa",
+    "Quando você sorri eu me derreto",
+    "Amo tanto do seu beijo, seu toque, tudo que vem de você",
+    "Te ver e não te querer é impossível",
+    "Se você pudesse enxergar como eu te enxergo, você se apaixonaria toda vez que olhasse no espelho",
+    "Tudo começou quando você sorriu para mim, meu mundo acabou e começou naquele instante",
+    "Quero te fazer feliz enquanto eu respirar",
+    "Você me faz tão bem",
+    "Estou com saudade",
+    "VOCÊ PARECE ESCULPIDA POR ANJOS DE TÃO PERFEITA",
+    "Queria estar abraçado em você agora!",
 ]
 
 function showMessage () {
@@ -77,7 +89,7 @@ function showMessage () {
         if (i = msg) {
             return messages[i];
         } else {
-            return messages[i-1];
+            return "I love you";
         }
     } 
 }
