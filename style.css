@@ -1,0 +1,37 @@
+body {
+    height: 100vh;
+    background-color: rgba(255, 228, 196, 0.575);
+    font-family: 'Times New Roman', Times, serif;
+}
+#bd {
+    height: 80%;
+    margin: 0 auto;
+    max-width: 80%;
+}
+header {
+}
+h3#day {
+    color: rgb(77, 77, 77);
+    font-weight: 500;
+}
+h1 {
+    color: rgb(37, 37, 37);
+}
+div#messages {
+    max-width: 60%;
+    margin: 100px auto;
+}
+h2 {
+    color: rgb(94, 94, 94);
+}
+
+footer {
+    margin: 0;
+    background-color: black;
+}
+footer div h4 {
+    font-size: 1em;
+    text-align: center;
+    color: aliceblue;
+}
+
