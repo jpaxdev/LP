@@ -16,6 +16,37 @@ window.addEventListener('load', function () {
     document.getElementById("date").innerHTML = showDate();
 })
 
+function showDay (dia = new Date()) {
+    var d = dia.getDay();
+
+    if(d === 1) {
+        return "Monday"
+    }
+    if(d === 2) {
+        return "Tuesday"
+    }
+    if(d === 3) {
+        return "Wednesday"
+    }
+    if(d === 4) {
+        return "Thursday"
+    }
+    if(d === 5) {
+        return "Friday"
+    }
+    if(d === 6) {
+        return "Sadurday"
+    }
+    if(d === 7) {
+        return "Sunday"
+    }
+}
+
+
+window.addEventListener('load', function () {
+    document.getElementById("dia").innerHTML = showDay();
+})
+
 // ------- end ----- >
 
 // function to show the right message ------> 

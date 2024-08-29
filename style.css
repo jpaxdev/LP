@@ -41,7 +41,7 @@ footer div h4 {
     margin: 60px auto;
     /* font-family:'Courier New', Courier, monospace; */
 }
-#message-text:after{
+/* #message-text:after{
     content: '|';
     margin-left: 5px;
     opacity: 1;
@@ -55,4 +55,4 @@ footer div h4 {
     50%{
         opacity: 0;
     }
-}
+} */
