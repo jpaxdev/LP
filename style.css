@@ -35,24 +35,3 @@ footer div h4 {
     text-align: center;
     color: aliceblue;
 }
-#message-text{
-    max-width: 480px;
-    text-align: center;
-    margin: 60px auto;
-    /* font-family:'Courier New', Courier, monospace; */
-}
-/* #message-text:after{
-    content: '|';
-    margin-left: 5px;
-    opacity: 1;
-    animation: pisca .7s infinite;
-   }
-
-@keyframes pisca{
-    0%, 100%{
-        opacity: 1;
-    }
-    50%{
-        opacity: 0;
-    }
-} */
