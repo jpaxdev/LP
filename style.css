@@ -5,7 +5,7 @@ body {
 }
 
 #bd {
-    height: 80%;
+    height: 700px;
     margin: 0 auto;
     max-width: 80%;
 }
@@ -30,8 +30,13 @@ footer {
     margin: 0;
     background-color: black;
 }
-footer div h4 {
-    font-size: 1em;
+footer div{
+    margin: 0;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
     text-align: center;
     color: aliceblue;
 }
