@@ -106,7 +106,7 @@ function showMessage () {
         "Você é incrível",
         "Você é Maravilhosa",
         "Quando você sorri eu me derreto",
-        "Amo tanto do seu beijo, seu toque, tudo que vem de você",
+        "Amo tanto o seu beijo, seu toque, tudo que vem de você",
         "Te ver e não te querer é impossível",
         "Se você pudesse se enxergar como eu te enxergo, você se apaixonaria toda vez que olhasse no espelho",
         "Tudo começou quando você sorriu para mim, meu mundo acabou e começou naquele instante",
@@ -125,13 +125,42 @@ function showMessage () {
         "Pensar em você, é pensar no meu futuro",
         "Queria te dar todas as palavras bonitas que existem no mundo, mas não acho que exista alguma que, sozinha, defina a sua beleza",
         "Quando estou perto de você, eu não preciso de mais nada",
-        "Je t'aime"    
-    ]
+        "Je t'aime",
+        "Eu to perdido no seu sorriso e não quero me achar",
+        "When there's madness, when there's poison in your head, when the sadness leaves you broken in your bed, I will hold you in the depths of your despair, and it's all in the name of love",
+        "Whenever I'm alone with you, you make me feel like I am young again",
+        "I just can't get you off of my mind",
+        "Você chegou na minha vida e transformou tudo sem nem se esforçar, só encaixou no meu coração, na minha mente e eu não quero mais que saia",
+        "Você rainh, o resto nadinha",
+        "Não vejo a hora de ter minha lua de mel com você.",
 
+    ]
     for (let i = 0; i <= messages.length; i++) {
         let msg = Math.floor(Math.random() * messages.length);
-        if (i = msg) {
-            return messages[i];
+        if (messages[msg]) {
+            // return messages[i];
+            const text = document.getElementById("message-text");
+            let write = str => {
+                let arrFromStr = str.split('');
+                let l = 0;
+                let printStr = setInterval(function() {
+                    
+                    if(arrFromStr[l] === ' ') {
+                        text.innerHTML += arrFromStr[l];
+                        text.innerHTML += arrFromStr[l + 1];
+                        l += 2;
+                    } else {
+                        text.innerHTML += arrFromStr[l];
+                        l++;
+                    }
+                    if (l === arrFromStr.length) {
+                        clearInterval(printStr);
+                        text.style.transition = '0.3s ease';
+                    }
+            
+                }, 50);
+            };
+            return write(messages[msg]);
 
         } else {
             return "I love you";
@@ -140,32 +169,5 @@ function showMessage () {
 }
 
 window.addEventListener('load', function () {
-    document.getElementById("message-text").innerHTML = showMessage()
+    showMessage()
 })
-
-
-
-// let write = str => {
-//     let arrFromStr = str.split('');
-//     let l = 0;
-//     let printStr = setInterval(function() {
-
-//         if(arrFromStr[l] === ' ') {
-//             document.getElementById("message-text").innerHTML += arrFromStr[l];
-//             document.getElementById("message-text").innerHTML += arrFromStr[l + 1];
-//             l += 2;
-//         } else {
-//             document.getElementById("message-text").innerHTML += arrFromStr[l];
-//             l++;
-//         }
-//         if (l === arrFromStr.length) {
-//             clearInterval(printStr);
-//             document.getElementById("message-text").style.transition = '0.3s ease';
-//             // document.body.style.fontSize = '150px';
-//             // document.body.style.color = '#000000';
-//             // document.body.style.background = '#ffffff';
-//         }
-
-//     }, 50);
-// };
-// return write(messages[i]);
