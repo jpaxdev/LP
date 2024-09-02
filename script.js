@@ -84,7 +84,6 @@ window.addEventListener('load', function () {
 function showMessage () {
 
     const messages = [
-        "I wanna show you up!", 
         "You got me stuck on the thought of you!", 
         "You're more than the sunshine in my eyes", 
         "You got those pretty eyes in your head, you know it", 
