@@ -132,6 +132,7 @@ function showMessage () {
         "Você chegou na minha vida e transformou tudo sem nem se esforçar, só encaixou no meu coração, na minha mente e eu não quero mais que saia",
         "Você rainh, o resto nadinha",
         "Não vejo a hora de ter minha lua de mel com você.",
+        "Eu te admiro tanto, você é incrível, tem tantos sonhos e tem tanta energia para correr atrás deles e sempre mantendo um sorriso no rosto, você é daquelas pessoas que mesmo sendo durona, é sensível, eu te amo!",
 
     ]
     for (let i = 0; i <= messages.length; i++) {
