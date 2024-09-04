@@ -38,6 +38,7 @@ footer {
     margin: 0;
     background-color: black;
 }
+
 footer div{
     margin: 0;
     height: 200px;
@@ -46,5 +47,22 @@ footer div{
     align-items: center;
     font-size: 2em;
     text-align: center;
-    color: aliceblue;
+    color: rgb(255, 245, 240);
+}
+
+#message-text:after{
+ content: '|';
+ margin-left: 2px;
+ opacity: 1;
+ animation: pisca .9s infinite;
+}
+/* Animação aplicada ao content referente a classe *.titulo-principal* resultando num efeito de cursor piscando. */
+
+@keyframes pisca{
+    0%, 100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
 }

@@ -20,24 +20,31 @@ function showDay (dia = new Date()) {
     var d = dia.getDay();
 
     if(d === 1) {
+        document.body.style.backgroundColor = "antiquewhite";
         return "Monday"
     }
     if(d === 2) {
+        document.body.style.backgroundColor = "#fff0d4";
         return "Tuesday"
     }
     if(d === 3) {
+        document.body.style.backgroundColor = "#f4dcfffd";
         return "Wednesday"
     }
     if(d === 4) {
+        document.body.style.backgroundColor = "#eeffc5";
         return "Thursday"
     }
     if(d === 5) {
+        document.body.style.backgroundColor = "##c5d0ff";
         return "Friday"
     }
     if(d === 6) {
+        document.body.style.backgroundColor = "#ffd5e5";
         return "Sadurday"
     }
     if(d === 7) {
+        document.body.style.backgroundColor = "#e0fffd";
         return "Sunday"
     }
 }
@@ -133,7 +140,14 @@ function showMessage () {
         "Você rainh, o resto nadinha",
         "Não vejo a hora de ter minha lua de mel com você.",
         "Eu te admiro tanto, você é incrível, tem tantos sonhos e tem tanta energia para correr atrás deles e sempre mantendo um sorriso no rosto, você é daquelas pessoas que mesmo sendo durona, é sensível, eu te amo!",
-
+        "Eu estaria mentindo se dissesse qie você me deixa sem palavras, a verdade é que você deixa minha lingua tão fraca que ela esquece a linguagem que fala.",
+        "Minha musa do verão, eu não posso dizer não, você me dá tesão e eu penso toda hora em você passando a mão",
+        "Você já está na proteção de tela do meu celular",
+        "Só queria te chamar de minha",
+        "Baby, I think you were made for me",
+        "Fecho meus olhos e você aparece para mim",
+        "Amor, sem os seus beijos eu vou enloquecer",
+        "I got it so wet easily, that is just like a pool let me swim in it and when we're all done fall asleep with me"
     ]
     for (let i = 0; i <= messages.length; i++) {
         let msg = Math.floor(Math.random() * messages.length);
