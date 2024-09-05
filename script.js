@@ -147,7 +147,12 @@ function showMessage () {
         "Baby, I think you were made for me",
         "Fecho meus olhos e você aparece para mim",
         "Amor, sem os seus beijos eu vou enloquecer",
-        "I got it so wet easily, that is just like a pool let me swim in it and when we're all done fall asleep with me"
+        "I got it so wet easily, that is just like a pool let me swim in it and when we're all done fall asleep with me",
+        "When I'm with you, I'm an addict",
+        "Let me be the portable heater, that you'll get cold without",
+        "Your love is more than what its weight in gold",
+        "You know what I want and what I need",
+        "I can't help myself when you get close to me",
     ]
     for (let i = 0; i <= messages.length; i++) {
         let msg = Math.floor(Math.random() * messages.length);
