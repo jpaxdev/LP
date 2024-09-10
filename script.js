@@ -70,7 +70,7 @@ function message (hour = new Date()) {
     if (hr > 18 && hr <= 20) {
         return "Good Evening!"
     }  
-    if (hr > 20 && hr <= 0) {
+    if (hr > 20 && hr <= 23) {
         return "Good Night!"
     } 
     if (hr > 0 && hr < 6) {
