@@ -153,6 +153,7 @@ function showMessage () {
         "Your love is more than what its weight in gold",
         "You know what I want and what I need",
         "I can't help myself when you get close to me",
+        "Você me traz uma paz e não consigo parar de pensar em como você já se tornou algo tão importante na minha vida",
     ]
     for (let i = 0; i <= messages.length; i++) {
         let msg = Math.floor(Math.random() * messages.length);
