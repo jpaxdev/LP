@@ -154,6 +154,11 @@ function showMessage () {
         "You know what I want and what I need",
         "I can't help myself when you get close to me",
         "Você me traz uma paz e não consigo parar de pensar em como você já se tornou algo tão importante na minha vida",
+        "Falling for you wasn't falling at all. It was walking into a house and suddenly knowing I'm home",
+        "O que será que você tem? Só sei que isso me faz tão bem, não canso de te admirar, reparar, sem parar, sei lá, será que é só um sonho bom?",
+        "If life is a movie, then you're the best part",
+        "I love to hold you close, tonight and always, I love to wake up next to you",
+        "I wanna be yours",
     ]
     for (let i = 0; i <= messages.length; i++) {
         let msg = Math.floor(Math.random() * messages.length);
