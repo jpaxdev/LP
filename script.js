@@ -159,6 +159,9 @@ function showMessage () {
         "If life is a movie, then you're the best part",
         "I love to hold you close, tonight and always, I love to wake up next to you",
         "I wanna be yours",
+        "I won't hesitate no more, it cannot wait, I'm yours",
+        "I think I'm right for you, babe",
+        "I'm gonna love you like I'm gonna lose you",
     ]
     for (let i = 0; i <= messages.length; i++) {
         let msg = Math.floor(Math.random() * messages.length);
