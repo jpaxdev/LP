@@ -162,6 +162,10 @@ function showMessage () {
         "I won't hesitate no more, it cannot wait, I'm yours",
         "I think I'm right for you, babe",
         "I'm gonna love you like I'm gonna lose you",
+        "Ask me, 'What's my best side', I stand back and point at you!",
+        "When I'm away from you, I miss your touch, you're the reason I believe in love",
+        "I tried to be chill, but you're so hot that I melted",
+        
     ]
     for (let i = 0; i <= messages.length; i++) {
         let msg = Math.floor(Math.random() * messages.length);
