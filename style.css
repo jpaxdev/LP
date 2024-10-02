@@ -1,5 +1,6 @@
 body {
-    height: 100vh;
+    margin: 0;
+    height: 100%;
     background-color: rgba(151, 222, 255, 0.671);
     font-family:'Courier New', Courier, monospace;
 }
@@ -35,12 +36,10 @@ h2 {
 }
 
 footer {
-    margin: 0;
     background-color: black;
 }
 
 footer div{
-    margin: 0;
     height: 200px;
     display: flex;
     justify-content: center;

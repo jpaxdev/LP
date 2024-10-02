@@ -1,7 +1,7 @@
 // funciton to show date on page ----->
 
 function showDate (data = new Date()) {
-    var day = data.getDay();
+    var day = data.getDate();
     var month = data.getMonth()+1;
     var year = data.getFullYear();
 
@@ -43,7 +43,7 @@ function showDay (dia = new Date()) {
         document.body.style.backgroundColor = "#ffd5e5";
         return "Sadurday"
     }
-    if(d === 7) {
+    if(d === 0) {
         document.body.style.backgroundColor = "#e0fffd";
         return "Sunday"
     }
@@ -89,6 +89,13 @@ window.addEventListener('load', function () {
 
 
 function showMessage () {
+
+    const birthday = new Date();
+    var bd = birthday.getDate();
+    var bd2 = birthday.getMonth()+1;
+
+
+
 
     const messages = [
         "You got me stuck on the thought of you!", 
@@ -165,39 +172,51 @@ function showMessage () {
         "Ask me, 'What's my best side', I stand back and point at you!",
         "When I'm away from you, I miss your touch, you're the reason I believe in love",
         "I tried to be chill, but you're so hot that I melted",
+        "I'm gonna love you in every kind of way, give you all, give you all of me",
+        "I wanna please you, no matter how long it takes",
+        "Me deixe te trazer num dengo pra num cafuné fazer os meus apelos",
+        "Eu quero ser exorcizado pela água benta desse olhar infindo",
+        "Que bom é ser fotografado mas pela retina desses olhos lindos",
+        "O cheiro de amor que vem chegando, trazendo o seu corpo só para mim"
         
     ]
-    for (let i = 0; i <= messages.length; i++) {
-        let msg = Math.floor(Math.random() * messages.length);
-        if (messages[msg]) {
-            // return messages[i];
-            const text = document.getElementById("message-text");
-            let write = str => {
-                let arrFromStr = str.split('');
-                let l = 0;
-                let printStr = setInterval(function() {
-                    
-                    if(arrFromStr[l] === ' ') {
-                        text.innerHTML += arrFromStr[l];
-                        text.innerHTML += arrFromStr[l + 1];
-                        l += 2;
-                    } else {
-                        text.innerHTML += arrFromStr[l];
-                        l++;
-                    }
-                    if (l === arrFromStr.length) {
-                        clearInterval(printStr);
-                        text.style.transition = '0.3s ease';
-                    }
-            
-                }, 50);
-            };
-            return write(messages[msg]);
 
-        } else {
-            return "I love you";
-        }
-    } 
+    if (bd == 24 && bd2 == 9) {
+        return "teste";
+    } else {
+        for (let i = 0; i <= messages.length; i++) {
+            let msg = Math.floor(Math.random() * messages.length);
+            
+            if (messages[msg]) {
+                // return messages[i];
+                const text = document.getElementById("message-text");
+                let write = str => {
+                    let arrFromStr = str.split('');
+                    let l = 0;
+                    let printStr = setInterval(function() {
+                        
+                        if(arrFromStr[l] === ' ') {
+                            text.innerHTML += arrFromStr[l];
+                            text.innerHTML += arrFromStr[l + 1];
+                            l += 2;
+                        } else {
+                            text.innerHTML += arrFromStr[l];
+                            l++;
+                        }
+                        if (l === arrFromStr.length) {
+                            clearInterval(printStr);
+                            text.style.transition = '0.3s ease';
+                        }
+                
+                    }, 50);
+                };
+                return write(messages[msg]);
+    
+            }
+        } 
+
+    }
+
 }
 
 window.addEventListener('load', function () {
