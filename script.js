@@ -90,13 +90,6 @@ window.addEventListener('load', function () {
 
 function showMessage () {
 
-    const birthday = new Date();
-    var bd = birthday.getDate();
-    var bd2 = birthday.getMonth()+1;
-
-
-
-
     const messages = [
         "You got me stuck on the thought of you!", 
         "You're more than the sunshine in my eyes", 
@@ -177,8 +170,15 @@ function showMessage () {
         "Me deixe te trazer num dengo pra num cafuné fazer os meus apelos",
         "Eu quero ser exorcizado pela água benta desse olhar infindo",
         "Que bom é ser fotografado mas pela retina desses olhos lindos",
-        "O cheiro de amor que vem chegando, trazendo o seu corpo só para mim"
-        
+        "O cheiro de amor que vem chegando, trazendo o seu corpo só para mim",
+        "Te amo não é só falado, vou te provar que amar é um hábito",
+        "Quem diria, eu feio um bobo assim, você despertou o amor em mim",
+        "Queria só gostar, mas tô amando",
+        "Você é meu tchan",
+        "If the world was ending, I'd wanna be next to you",
+        "if the party was over and our time on earth was through, I'd wanna hold you just for a while and die with a smile",
+        "Wherever you go, that's where I'll follow",
+        "I'ma love you every night like it's the last night"        
     ]
 
     if (bd == 24 && bd2 == 9) {
