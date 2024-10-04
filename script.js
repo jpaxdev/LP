@@ -178,7 +178,9 @@ function showMessage () {
         "If the world was ending, I'd wanna be next to you",
         "if the party was over and our time on earth was through, I'd wanna hold you just for a while and die with a smile",
         "Wherever you go, that's where I'll follow",
-        "I'ma love you every night like it's the last night"        
+        "I'ma love you every night like it's the last night",
+        "Eu te quero só pra mim, como as ondas são do mar",
+        "Não dá para viver assim, querer sem poder te tocar"
     ]
 
     if (bd == 24 && bd2 == 9) {
